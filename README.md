@@ -1,10 +1,11 @@
-# Containerize a Multi-Service Application
+# 🚀 Containerized Multi-Service Application
 
-This sample project contains a minimal multi-service application:
+This project containerizes a simple frontend + backend + database application using Docker and Docker Compose.
 
-- Frontend: React (served by nginx)
-- Backend: Spring Boot (REST API)
-- Database: MySQL
+🧱 Services: 
+Frontend: React (served by Nginx)
+Backend: Spring Boot REST API
+Database: MySQL with init script
 
 Everything is containerized with per-service Dockerfiles and composed with docker-compose. Best practices used:
 - Multi-stage builds
@@ -13,10 +14,9 @@ Everything is containerized with per-service Dockerfiles and composed with docke
 - .env file for configuration
 
 ## Quick start
-1. Build & run:
-```bash
-docker-compose up --build
-```
+▶️ How to Run
+1. Start all services
+docker-compose up -d --build
 
 2. Access frontend: http://localhost:3000
    Frontend calls backend API at /api/messages
