@@ -6,8 +6,10 @@ import java.util.Map;
 
 @RestController
 public class MessageController {
+
     @GetMapping("/api/messages")
-    public Map<String,String> msg(){
-        return Map.of("message","Hello from Spring Boot backend!");
+    public Map<String,String> msg() {
+        return Map.of("message", "Hello from Spring Boot backend!");
     }
 }
+
