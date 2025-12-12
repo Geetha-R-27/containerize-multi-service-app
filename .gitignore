@@ -1,0 +1,6 @@
+/node_modules
+/build
+/target
+*.jar
+*.zip
+.DS_Store
